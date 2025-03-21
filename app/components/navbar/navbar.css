@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column; /* Affiche les éléments de la navbar en colonne */
+    align-items: center; /* Centre les éléments */
+    padding: 10px; /* Ajoute un padding pour un meilleur espacement */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Affiche les liens en colonne */
+    gap: 1rem; /* Ajoute un espacement entre les liens */
+  }
+
+  .nav-link {
+    padding: 1rem; /* Augmente le padding pour les petits écrans */
+    justify-content: center; /* Centre le texte */
+    width: 100%; /* Prend toute la largeur */
+    text-align: center; /* Centre le texte */
+  }
+
+  .mobile-menu-button {
+    display: block; /* Affiche le bouton de menu mobile */
+    margin: 10px 0; /* Ajoute un espacement autour du bouton */
+  }
+} 

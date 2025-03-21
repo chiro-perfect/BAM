@@ -1,0 +1,838 @@
+.topspacing{
+  padding-top: 150px;
+ }
+ 
+/* Variables pour les couleurs */
+:root {
+  /* Polices */
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-roboto-mono);
+  
+  /* Couleurs pour le thème sombre */
+  --primary-dark: #0b162c;
+  --primary-medium: #1c2942;
+  --primary-light: #66b0cb;
+  --accent: #00ddff;
+  --text-light: #ffffff;
+  --text-dark: #333333;
+
+  /* Couleurs pour le thème clair */
+  --primary-dark-light: #ffffff;
+  --primary-medium-light: #1c2942;
+  --primary-light-light: #66b0cb;
+  --accent-light: #00ddff;
+  --text-light-light: #333333;
+  --text-dark-light: #ffffff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes neon {
+  0% {
+      text-shadow: 0 0 5px var(--accent), 0 0 10px var(--accent), 0 0 20px var(--accent), 0 0 30px var(--accent), 0 0 40px var(--accent);
+  }
+  100% {
+      text-shadow: 0 0 10px var(--accent), 0 0 20px var(--accent), 0 0 30px var(--accent), 0 0 40px var(--accent), 0 0 50px var(--accent);
+  }
+}
+
+/* Styles globaux */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--primary-dark);
+  color: var(--text-light);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: rgba(102, 176, 203, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 8px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+header img {
+  height: 100px;
+}
+
+header h1 {
+  color: var(--text-light);
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+header h1 a {
+  color: var(--text-light);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header h1 a:hover {
+  color: var(--accent);
+}
+
+nav {
+  flex-grow: 1;
+  text-align: right;
+  background-color: rgba(102, 176, 203, 0.1);
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-light);
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: none;
+}
+
+nav ul li a:hover {
+  background-color: var(--primary-medium);
+  color: var(--text-dark);
+}
+
+/* Animation de l'arrière-plan au survol */
+nav ul li a::before {
+  content: none;
+}
+
+/* Animation du texte au survol */
+nav ul li a span {
+  position: relative;
+  z-index: 1;
+  transition: none;
+}
+
+nav ul li a:hover span {
+  transform: none;
+}
+
+/* Effet de soulignement */
+nav ul li a::after {
+  content: none;
+}
+
+/* Animation au clic */
+nav ul li a:active {
+  transform: none;
+}
+
+/* Style pour le lien actif */
+nav ul li a.active {
+  background-color: var(--accent);
+  color: var(--text-dark);
+}
+
+/* Sections principales */
+.welcome-section {
+  background: linear-gradient(135deg, var(--primary-medium) 0%, var(--primary-dark) 100%);
+  padding: 80px 0;
+  text-align: center;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out;
+}
+
+.welcome-section h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text-light);
+}
+
+.welcome-section p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--text-light);
+  opacity: 0.8;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(102, 176, 203, 0.1);
+  color: var(--text-light);
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  transition: all 0.3s ease;
+}
+
+footer p {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+footer:hover p {
+  opacity: 1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .welcome-section h2 {
+    font-size: 28px;
+  }
+}
+
+/* Ajout de styles pour les cartes */
+.card {
+  background-color: var(--primary-medium);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.section {
+  margin: 40px 0;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-light);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+/* Ajout de styles pour les compétences */
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skill-group {
+  flex: 1;
+  margin: 10px;
+  min-width: 300px;
+  margin-bottom: 20px;
+}
+
+.skill-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  background-color: var(--primary-medium);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card i {
+  color: var(--accent);
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.skill-card:hover i {
+  transform: scale(1.2);
+}
+
+.skill-card h4 {
+  font-weight: bold;
+  color: var(--accent);
+}
+
+/* Ajout de styles pour les expériences */
+.experience-item {
+  background-color: var(--primary-medium);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.experience-item h3 {
+  display: flex;
+  align-items: center;
+}
+
+.experience-item h3 i {
+  margin-right: 10px;
+  color: var(--accent);
+}
+
+/* Ajout de styles pour les groupes de compétences */
+.skill-group {
+  margin-bottom: 20px;
+}
+
+.skill-group h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-light);
+}
+
+.skill-group .skill-card {
+  background-color: var(--primary-medium);
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  width: 220px;
+  margin: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-group .skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Ajout de styles pour les cartes d'expérience */
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-card {
+  background-color: var(--primary-medium);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajout de styles pour les atouts */
+.strengths-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 0; /* Commence avec une opacité de 0 */
+  animation: fadeInDown 0.5s forwards; /* Animation d'apparition */
+}
+
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      transform: translateY(-20px); /* Déplace vers le haut */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0); /* Retourne à la position d'origine */
+  }
+}
+
+.strength-card {
+  background-color: var(--primary-medium);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.strength-card i {
+  color: var(--accent);
+  margin-bottom: 5px;
+}
+
+.mission-list {
+  list-style-type: none; /* Supprime les puces par défaut */
+  padding: 0; /* Supprime le padding par défaut */
+}
+
+.mission-list li {
+  position: relative; /* Position relative pour les puces personnalisées */
+  padding-left: 20px; /* Espace pour les puces */
+}
+
+.mission-list li::before {
+  content: ''; /* Contenu vide pour la puce */
+  position: absolute; /* Position absolue pour placer la puce */
+  left: 0; /* Alignement à gauche */
+  top: 50%; /* Centrer verticalement */
+  transform: translateY(-50%); /* Ajustement pour centrer */
+  width: 10px; /* Largeur de la puce */
+  height: 10px; /* Hauteur de la puce */
+  background-color: var(--accent); /* Couleur de la puce */
+  border-radius: 50%; /* Forme ronde */
+}
+
+.experience-title {
+  font-size: 1.5em; /* Augmente la taille de la police */
+  font-weight: bold; /* Met le texte en gras */
+  margin: 20px 0 10px; /* Ajoute un espacement en haut et en bas */
+}
+
+.icon-accent {
+  color: var(--accent); /* Utilise la couleur d'accent définie */
+}
+
+/* Styles pour le formulaire de contact */
+.card {
+  background-color: var(--primary-medium);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--primary-light);
+}
+
+button {
+  background-color: var(--accent);
+  color: var(--text-light);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-light);
+}
+
+/* Styles pour l'écran de chargement */
+#loading-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--primary-medium);
+}
+
+#loading-screen h1 {
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 48px; /* Taille du titre */
+  margin: 20px 0; /* Espace autour du titre */
+}
+
+#loading-screen img {
+  height: 200px; /* Ajustez la taille du logo ici */
+  width: auto; /* Conserve le ratio d'aspect */
+}
+
+/* Styles pour la navbar */
+.navbar-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(11, 22, 44, 0.95);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  height: 70px;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-light);
+  transition: color 0.3s ease;
+}
+
+.nav-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 1rem;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, var(--accent), var(--primary-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-nav {
+  background: rgba(102, 176, 203, 0.1);
+  border-radius: 30px;
+  padding: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  padding: 0.8rem 1.2rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.nav-link.active {
+  background: var(--accent);
+  color: var(--primary-dark);
+}
+
+.nav-icon {
+  font-size: 1.2rem;
+}
+
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Media Queries pour le responsive */
+@media (max-width: 768px) {
+  .mobile-menu-button {
+    display: block;
+  }
+
+  .navbar-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(11, 22, 44, 0.95);
+    padding: 1rem;
+    flex-direction: column;
+    align-items: stretch;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-nav.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-link {
+    padding: 1rem;
+    justify-content: center;
+  }
+}
+
+/* Animation pour le hover des liens */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Styles pour la page d'erreur */
+.error-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-medium) 100%);
+  padding: 20px;
+}
+
+.error-content {
+  text-align: center;
+  max-width: 600px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.error-title {
+  font-size: 120px;
+  margin: 0;
+  background: linear-gradient(45deg, var(--accent), var(--primary-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+}
+
+.error-subtitle {
+  font-size: 28px;
+  color: var(--text-light);
+  margin: 20px 0;
+}
+
+.error-message {
+  color: var(--text-light);
+  opacity: 0.8;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.error-image {
+  margin: 30px 0;
+  animation: float 3s ease-in-out infinite;
+}
+
+.error-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.error-button {
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.error-button.primary {
+  background: var(--accent);
+  color: var(--primary-dark);
+}
+
+.error-button.secondary {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--text-light);
+}
+
+.error-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.error-button.primary:hover {
+  background: var(--primary-light);
+}
+
+.error-button.secondary:hover {
+  background: rgba(102, 176, 203, 0.1);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design pour la page d'erreur */
+@media (max-width: 768px) {
+  .error-title {
+    font-size: 80px;
+  }
+
+  .error-subtitle {
+    font-size: 24px;
+  }
+
+  .error-actions {
+    flex-direction: column;
+  }
+
+  .error-button {
+    width: 100%;
+  }
+}
+
+/* Ajoutez ces styles pour le conteneur principal */
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px; /* Pour compenser la navbar fixe */
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Mise à jour des styles de la navbar */
+.navbar-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(11, 22, 44, 0.95);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  height: 70px;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-nav {
+  background: rgba(102, 176, 203, 0.1);
+  border-radius: 30px;
+  padding: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  padding: 0.8rem 1.2rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.nav-link.active {
+  background: var(--accent);
+  color: var(--primary-dark);
+}
+
+code, pre {
+  font-family: var(--font-mono);
+}
+ 

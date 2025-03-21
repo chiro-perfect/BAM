@@ -1,0 +1,152 @@
+.projectsContainer {
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  padding: 120px 20px 0;
+}
+
+.mainTitle {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 10px;
+  background: linear-gradient(45deg, var(--accent), var(--primary-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: titleFadeIn 1s ease-out;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--text-light);
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  opacity: 0.8;
+}
+
+.projectCard {
+  background: rgba(11, 22, 44, 0.4);
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 40px;
+  backdrop-filter: blur(10px);
+}
+
+.projectHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: var(--accent);
+}
+
+.projectHeader h2 {
+  color: var(--text-light);
+  font-size: 2rem;
+  margin: 0;
+}
+
+.projectContent {
+  color: var(--text-light);
+}
+
+.projectDescription h3 {
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.projectDescription p {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.features, .technicalDetails {
+  margin: 30px 0;
+}
+
+.features h4, .technicalDetails h4 {
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+
+.features ul, .technicalDetails ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li, .technicalDetails li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.featureIcon {
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+.projectLinks {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.githubLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--accent);
+  color: var(--primary-dark);
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.githubLink:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.githubIcon {
+  font-size: 1.5rem;
+}
+
+@keyframes titleFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .projectsContainer {
+    padding-top: 100px;
+  }
+
+  .projectCard {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .projectHeader {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .projectHeader h2 {
+    font-size: 1.5rem;
+  }
+
+  .features li, .technicalDetails li {
+    flex-direction: column;
+    text-align: center;
+  }
+} 
