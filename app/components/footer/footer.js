@@ -22,7 +22,7 @@ export default function Footer() {
       </div>
       <div className={styles.footerContent}>
         <div className={styles.footerLeft}>
-          <div className={styles.footerName}>Bachar ALAOUI MEDAGHRI</div>
+          <Link href="/about" className={styles.footerName}>Bachar ALAOUI MEDAGHRI</Link>
           <div className={styles.footerTitle}>Développeur Web & Technicien Réseau</div>
         </div>
         <div className={styles.footerRight}>

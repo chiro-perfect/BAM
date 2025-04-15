@@ -76,7 +76,7 @@ export default function Projects() {
 
             <div className={styles.projectLinks}>
               <a 
-                href="https://github.com/votre-username/gestion-stock" 
+                href="https://github.com/chiro-perfect" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className={styles.githubLink}

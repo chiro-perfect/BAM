@@ -1,4 +1,3 @@
-
 .page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
@@ -140,6 +139,9 @@ a.secondary {
   animation: glowText 3s ease-in-out infinite alternate;
   position: relative;
   text-shadow: 0 0 10px rgba(102, 176, 203, 0.3);
+  color: var(--text-light);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .footerName::after {
@@ -807,4 +809,8 @@ a.secondary {
 /* Animation pour l'indicateur actif */
 .navActiveIndicator {
   display: none;
+}
+
+.footerName:hover {
+  text-decoration: underline;
 }

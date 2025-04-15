@@ -14,7 +14,7 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata = {
-  title: "Portfolio",
+  title: "BAM Portfolio",
   description: "Portfolio professionnel",
 };
 

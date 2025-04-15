@@ -1,0 +1,10 @@
+.link {
+  position: relative;
+  z-index: 10;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+} 

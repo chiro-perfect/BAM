@@ -1,24 +1,29 @@
 @media (max-width: 768px) {
   .navbar-container {
+    position: fixed; /* Fixe la navbar sur le côté gauche */
+    top: 0;
+    left: 0;
+    height: auto; /* Ajuste la hauteur pour qu'elle ne prenne pas toute la hauteur de l'écran */
+    width: 200px; /* Réduit la largeur de la navbar */
+    background: rgba(11, 22, 44, 0.95); /* Fond semi-transparent */
     flex-direction: column; /* Affiche les éléments de la navbar en colonne */
-    align-items: center; /* Centre les éléments */
+    align-items: flex-start; /* Aligne les éléments à gauche */
     padding: 10px; /* Ajoute un padding pour un meilleur espacement */
+    transition: all 0.3s ease; /* Animation pour l'ouverture/fermeture */
+    overflow-y: auto; /* Permet le défilement si le contenu dépasse la hauteur */
+    z-index: 1000; /* Assure que la navbar est au-dessus des autres éléments */
   }
 
-  .nav-links {
+  .navbar-nav {
+    display: flex; /* Affiche les éléments de la navbar */
     flex-direction: column; /* Affiche les liens en colonne */
-    gap: 1rem; /* Ajoute un espacement entre les liens */
+    gap: 0.5rem; /* Réduit l'espacement entre les liens */
   }
 
   .nav-link {
-    padding: 1rem; /* Augmente le padding pour les petits écrans */
-    justify-content: center; /* Centre le texte */
+    padding: 0.8rem; /* Ajuste le padding pour les petits écrans */
+    justify-content: flex-start; /* Aligne le texte à gauche */
     width: 100%; /* Prend toute la largeur */
-    text-align: center; /* Centre le texte */
-  }
-
-  .mobile-menu-button {
-    display: block; /* Affiche le bouton de menu mobile */
-    margin: 10px 0; /* Ajoute un espacement autour du bouton */
+    text-align: left; /* Aligne le texte à gauche */
   }
 } 
