@@ -3,7 +3,7 @@ import Navbar from '../components/navbar/navbar';
 import Footer from '../components/footer/footer';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import styles from './about.module.css';
+import styles from '../about/about.module.css';
 
 export default function Accueil() {
   const [loading, setLoading] = useState(true);
