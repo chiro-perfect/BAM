@@ -814,3 +814,21 @@ a.secondary {
 .footerName:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .page-container {
+    padding-top: 60px;
+  }
+
+  .main {
+    padding: 16px;
+  }
+
+  .link {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    padding: 8px 10px;
+  }
+}

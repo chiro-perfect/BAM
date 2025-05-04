@@ -1,29 +1,68 @@
+@media (max-width: 1200px) {
+  .navbar-container {
+    padding: 0 1rem; /* Réduit le padding pour les écrans plus petits */
+  }
+
+  .nav-link {
+    padding: 0.6rem 1rem; /* Ajuste le padding pour les petits écrans */
+  }
+}
+
 @media (max-width: 768px) {
   .navbar-container {
-    position: fixed; /* Fixe la navbar sur le côté gauche */
-    top: 0;
+    padding: 0 1rem; /* Réduit le padding pour les écrans plus petits */
+    width: 95%; /* Ajuste la largeur de la navbar */
+  }
+
+  .navbar-header {
+    height: 60px; /* Réduit la hauteur de la navbar sur mobile */
+  }
+
+  .navbar-nav {
+    position: absolute; /* Positionne les éléments de la navbar */
+    top: 60px; /* Décale les éléments sous la navbar */
     left: 0;
-    height: auto; /* Ajuste la hauteur pour qu'elle ne prenne pas toute la hauteur de l'écran */
-    width: 200px; /* Réduit la largeur de la navbar */
+    right: 0;
     background: rgba(11, 22, 44, 0.95); /* Fond semi-transparent */
-    flex-direction: column; /* Affiche les éléments de la navbar en colonne */
-    align-items: flex-start; /* Aligne les éléments à gauche */
-    padding: 10px; /* Ajoute un padding pour un meilleur espacement */
-    transition: all 0.3s ease; /* Animation pour l'ouverture/fermeture */
-    overflow-y: auto; /* Permet le défilement si le contenu dépasse la hauteur */
-    z-index: 1000; /* Assure que la navbar est au-dessus des autres éléments */
+    padding: 1rem;
+    flex-direction: column;
+    align-items: stretch;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-nav.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 
   .navbar-nav {
     display: flex; /* Affiche les éléments de la navbar */
     flex-direction: column; /* Affiche les liens en colonne */
     gap: 0.5rem; /* Réduit l'espacement entre les liens */
+    width: 100%; /* Prend toute la largeur de la navbar */
   }
 
   .nav-link {
-    padding: 0.8rem; /* Ajuste le padding pour les petits écrans */
-    justify-content: flex-start; /* Aligne le texte à gauche */
-    width: 100%; /* Prend toute la largeur */
-    text-align: left; /* Aligne le texte à gauche */
+    padding: 0.5rem; /* Ajuste le padding pour les petits écrans */
+    font-size: 0.9rem; /* Réduit la taille de la police pour les petits écrans */
+  }
+
+  .nav-icon {
+    font-size: 1.5rem; /* Augmente la taille de l'icône pour la rendre plus visible */
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-link {
+    padding: 0.5rem; /* Réduit encore le padding pour les très petits écrans */
+    font-size: 0.8rem; /* Réduit la taille de la police pour les très petits écrans */
+  }
+
+  .navbar-container {
+    padding: 0 0.5rem; /* Réduit le padding pour les très petits écrans */
   }
 } 

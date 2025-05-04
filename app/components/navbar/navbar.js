@@ -12,6 +12,7 @@ export default function Navbar() {
   const [mounted, setMounted] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [isSideNav, setIsSideNav] = useState(false);
 
   const navItems = [
     { path: '/', label: 'Accueil', icon: FaHome },
@@ -34,8 +35,10 @@ export default function Navbar() {
       const controlNavbar = () => {
         if (window.scrollY > lastScrollY) {
           setIsVisible(false);
+          setIsSideNav(true);
         } else {
           setIsVisible(true);
+          setIsSideNav(false);
         }
         setLastScrollY(window.scrollY);
       };
@@ -51,14 +54,14 @@ export default function Navbar() {
   if (!mounted) return null;
 
   return (
-    <nav className={`${styles.navbar} ${!isVisible ? styles.navbarHidden : ''}`}>
+    <nav className={`${styles.navbar} ${!isVisible ? styles.navbarHidden : ''} ${isSideNav ? styles.sideNav : ''}`}>
       <div className={styles.navbarBrand}>
         <Link href="/" className={styles.navLink}>
           <Image 
             src="/favicon.ico"
             alt="Logo"
-            width={180}
-            height={170}
+            width={40}
+            height={40}
             className={styles.navLogo}
             priority
           />

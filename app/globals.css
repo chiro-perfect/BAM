@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  font-family: "Roboto", sans-serif;
+}
+
 .topspacing{
   padding-top: 150px;
  }
@@ -624,6 +630,26 @@ button:hover {
     padding: 1rem;
     justify-content: center;
   }
+
+  .navbar-header {
+    height: 60px; /* Réduit la hauteur de la navbar sur mobile */
+  }
+
+  .navbar-container {
+    padding: 0 1rem; /* Réduit le padding pour les écrans plus petits */
+  }
+
+  .main-content {
+    padding: 1rem; /* Réduit le padding pour le contenu principal */
+  }
+
+  .page-container {
+    padding-top: 60px; /* Ajuste le padding supérieur pour compenser la navbar */
+  }
+
+  .link {
+    font-size: 1rem; /* Ajuste la taille de la police des liens */
+  }
 }
 
 /* Animation pour le hover des liens */
@@ -777,7 +803,7 @@ button:hover {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: 70px; /* Pour compenser la navbar fixe */
+  padding-top: 60px; /* Ajuste le padding supérieur pour compenser la hauteur de la navbar fixe */
 }
 
 .main-content {
@@ -834,5 +860,11 @@ button:hover {
 
 code, pre {
   font-family: var(--font-mono);
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    padding-top: 60px; /* Ajuste le padding supérieur pour les petits écrans */
+  }
 }
  

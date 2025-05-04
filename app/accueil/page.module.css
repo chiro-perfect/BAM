@@ -7,4 +7,10 @@
 
 .link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .link {
+    font-size: 1rem; /* Ajuste la taille de la police des liens */
+  }
 } 
