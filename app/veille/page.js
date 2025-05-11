@@ -39,30 +39,30 @@ export default function Veille() {
           
           <div className={styles.articlesList}>
             <article className={styles.articleCard}>
-              <h3>Claude 3 : la nouvelle IA de Anthropic qui rivalise avec GPT-4</h3>
-              <p>Anthropic lance Claude 3, une nouvelle famille de modèles d'IA qui surpasse GPT-4 sur de nombreux benchmarks et offre des capacités multimodales avancées.</p>
-              <a href="https://www.journaldunet.com/intelligence-artificielle/1528697-anthropic-surprend-avec-claude-3-un-modele-d-ia-plus-puissant-que-gpt-4-et-multimodal/#:~:text=Apr%C3%A8s%20s'%C3%AAtre%20fait%20d%C3%A9passer,'usage%2C%20selon%20les%20benchmarks." target="_blank" rel="noopener noreferrer">
+              <h3>Claude 3.5 : L'IA d'Anthropic surpasse GPT-4</h3>
+              <p>Anthropic a lancé Claude 3.5 Sonnet, une version améliorée de son modèle d'IA, surpassant GPT-4 sur une gamme étendue d'évaluations, notamment en raisonnement complexe et en traitement du langage naturel.</p>
+              <a href="https://www.anthropic.com/news/claude-3-5-sonnet?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
                 Lire l'article original
               </a>
-              <span className={styles.date}>Publié le 5 Mars 2024</span>
+              <span className={styles.date}>Publié le 5 Mai 2025</span>
             </article>
 
             <article className={styles.articleCard}>
-              <h3>Gemini 1.5 : Google dévoile son nouveau modèle d'IA</h3>
-              <p>Google présente Gemini 1.5, capable d'analyser jusqu'à 1 million de tokens, promettant une révolution dans le traitement de longs contenus.</p>
-              <a href="https://www.zdnet.fr/actualites/google-presente-son-nouveau-modele-d-ia-gemini-15-39964288.htm" target="_blank" rel="noopener noreferrer">
+              <h3>Gemini 2.5 : Google renforce son IA multimodale</h3>
+              <p>Google a introduit Gemini 2.5, son modèle d'IA multimodale le plus avancé, capable de traiter du texte, du code, des images, de l'audio et de la vidéo. Cette version améliore la compréhension contextuelle et la performance générale.</p>
+              <a href="https://deepmind.google/technologies/gemini/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
                 Lire l'article original
               </a>
-              <span className={styles.date}>Publié le 15 Février 2024</span>
+              <span className={styles.date}>Publié le 2 Mai 2025</span>
             </article>
 
             <article className={styles.articleCard}>
-              <h3>Sora : L'IA générative vidéo d'OpenAI</h3>
-              <p>OpenAI révolutionne la création vidéo avec Sora, capable de générer des vidéos réalistes à partir de descriptions textuelles.</p>
-              <a href="https://www.cscience.ca/sora-dopenai-le-realisme-absolu-sur-le-bout-de-la-langue/?gclid=Cj0KCQiA8fW9BhC8ARIsACwHqYp1DvPDL0NKTZi40idXPK9eZE18of5n4oP3ebbKIAd-xwauHTnr0nkaAkijEALw_wcB" target="_blank" rel="noopener noreferrer">
+              <h3>Sora : OpenAI lance son générateur vidéo IA au Royaume-Uni</h3>
+              <p>OpenAI a déployé Sora, son outil de génération vidéo à partir de texte, au Royaume-Uni, déclenchant des débats sur l'utilisation des contenus protégés par des droits d'auteur.</p>
+              <a href="https://www.theguardian.com/technology/2025/feb/28/openai-sora-video-generation-uk-amid-copyright-row?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
                 Lire l'article original
               </a>
-              <span className={styles.date}>Publié le 16 Février 2024</span>
+              <span className={styles.date}>Publié le 28 Février 2025</span>
             </article>
           </div>
         </section>
@@ -77,29 +77,29 @@ export default function Veille() {
           <div className={styles.articlesList}>
             <article className={styles.articleCard}>
               <h3>Les ransomwares ont causé 1,1 milliard de dollars de pertes en 2023</h3>
-              <p>Le FBI révèle que les attaques par rançongiciel ont atteint des niveaux record en 2023, avec des pertes financières considérables.</p>
-              <a href="https://www.lemondeinformatique.fr/actualites/lire-un-montant-record-de-1-1-md$-verse-en-rancons-en-2023-92933.html" target="_blank" rel="noopener noreferrer">
+              <p>Le FBI a rapporté que les attaques par ransomware ont causé des pertes record de 1,1 milliard de dollars en 2023, soulignant la nécessité d'une vigilance accrue face à cette menace croissante.</p>
+              <a href="https://www.chainalysis.com/blog/ransomware-2024/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
                 Lire l'article original
               </a>
-              <span className={styles.date}>Publié le 1 Mars 2024</span>
+              <span className={styles.date}>Publié le 15 Mars 2024</span>
             </article>
 
             <article className={styles.articleCard}>
-              <h3>Le Zero Trust devient incontournable en 2024</h3>
-              <p>Comment le modèle Zero Trust s'impose comme la nouvelle norme de sécurité face aux menaces croissantes.</p>
-              <a href="https://www.illumio.com/fr/blog/top-cybersecurity-news-stories-from-december-2024#:~:text=Une%20chose%20est%20claire%20%3A%20Zero,cybers%C3%A9curit%C3%A9%20de%20ce%20mois%2Dci." target="_blank" rel="noopener noreferrer">
+              <h3>Le modèle Zero Trust devient incontournable en 2024</h3>
+              <p>Le modèle Zero Trust, qui repose sur le principe de "ne jamais faire confiance, toujours vérifier", est devenu essentiel pour sécuriser les infrastructures face à l'évolution des cybermenaces.</p>
+              <a href="https://novatech.net/blog/the-rise-of-zero-trust-cybersecurity-in-2024-why-its-essential-for-your-business?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
                 Lire l'article original
               </a>
               <span className={styles.date}>Publié le 20 Février 2024</span>
             </article>
 
             <article className={styles.articleCard}>
-              <h3>Les failles critiques dans les API REST</h3>
-              <p>OWASP publie son nouveau Top 10 des vulnérabilités API, soulignant l'importance croissante de la sécurité des interfaces.</p>
-              <a href="https://www.akamai.com/fr/glossary/what-are-api-security-breaches#:~:text=Une%20faille%20de%20s%C3%A9curit%C3%A9%20des%20API%20peut%20entra%C3%AEner%20un%20acc%C3%A8s,contr%C3%B4le%20de%20composants%20du%20syst%C3%A8me.." target="_blank" rel="noopener noreferrer">
+              <h3>Les failles critiques dans les API REST : une préoccupation majeure</h3>
+              <p>OWASP a mis en lumière les vulnérabilités critiques dans les API REST, soulignant l'importance de sécuriser ces interfaces pour prévenir les risques d'exploitation.</p>
+              <a href="https://www.axopen.com/blog/2024/11/owasp-top-10-failles-api/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
                 Lire l'article original
               </a>
-              <span className={styles.date}>Publié le 25 Février 2024</span>
+              <span className={styles.date}>Publié le 11 Novembre 2024</span>
             </article>
           </div>
         </section>
@@ -107,4 +107,4 @@ export default function Veille() {
       <Footer />
     </div>
   );
-} 
+}

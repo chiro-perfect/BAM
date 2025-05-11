@@ -96,7 +96,7 @@ export default function About() {
         </div>
 
         <p className={styles.description}>
-          <Link href="https://efrei365net-my.sharepoint.com/:b:/g/personal/bachar_alaoui-medaghri_efrei_net/EQ2Ug3bif9pIu14B9L_pa3IBmKjH6ZBg4MSn01a3OxDYUg?e=9QhgtB" className={styles.link}>Télécharger mon CV</Link>
+          <Link href="https://efrei365net-my.sharepoint.com/:b:/g/personal/bachar_alaoui-medaghri_efrei_net/EatR8BJttUtMl064i6t5ADwBYKA8oa-9gbruIR40umExAw?e=qUaQl1" className={styles.link}>Télécharger mon CV</Link>
         </p>
 
         <h2 className={styles.title}>Ma Motivation</h2>
