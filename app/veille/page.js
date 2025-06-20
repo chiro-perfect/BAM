@@ -39,30 +39,30 @@ export default function Veille() {
           
           <div className={styles.articlesList}>
             <article className={styles.articleCard}>
-              <h3>Claude 3.5 : L'IA d'Anthropic surpasse GPT-4</h3>
-              <p>Anthropic a lancé Claude 3.5 Sonnet, une version améliorée de son modèle d'IA, surpassant GPT-4 sur une gamme étendue d'évaluations, notamment en raisonnement complexe et en traitement du langage naturel.</p>
-              <a href="https://www.anthropic.com/news/claude-3-5-sonnet?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
+              <h3>Piloter l'infrastructure de demain : l'IA en première ligne</h3>
+              <p>L'IA est désormais indispensable pour gérer et optimiser les infrastructures IT. Découvrez comment elle révolutionne les opérations.</p>
+              <a href="https://www.actuia.com/contribution/romain-pia/piloter-linfrastructure-de-demain-lia-en-premiere-ligne/#:~:text=L'IA%2C%20un%20levier%20de%20d%C3%A9fense,-L'apport%20de&text=La%20technologie%20constitue%20%C3%A9galement%20un,pour%20l'ann%C3%A9e%2020241." target="_blank" rel="noopener noreferrer">
                 Lire l'article original
               </a>
-              <span className={styles.date}>Publié le 5 Mai 2025</span>
+              <span className={styles.date}>Publié le 17 Juin 2025</span>
             </article>
 
             <article className={styles.articleCard}>
-              <h3>Gemini 2.5 : Google renforce son IA multimodale</h3>
-              <p>Google a introduit Gemini 2.5, son modèle d'IA multimodale le plus avancé, capable de traiter du texte, du code, des images, de l'audio et de la vidéo. Cette version améliore la compréhension contextuelle et la performance générale.</p>
-              <a href="https://deepmind.google/technologies/gemini/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
+              <h3>L'IA à la française : entre ambitions souveraines et course mondiale</h3>
+              <p>La France se positionne sur l'échiquier mondial de l'IA. Explorez sa stratégie pour une IA souveraine et compétitive.</p>
+              <a href="https://www.cnrs.fr/fr/actualite/lia-la-francaise-entre-ambitions-souveraines-et-course-mondiale" target="_blank" rel="noopener noreferrer">
                 Lire l'article original
               </a>
-              <span className={styles.date}>Publié le 2 Mai 2025</span>
+              <span className={styles.date}>Publié le 18 Juin 2025</span>
             </article>
 
             <article className={styles.articleCard}>
-              <h3>Sora : OpenAI lance son générateur vidéo IA au Royaume-Uni</h3>
-              <p>OpenAI a déployé Sora, son outil de génération vidéo à partir de texte, au Royaume-Uni, déclenchant des débats sur l'utilisation des contenus protégés par des droits d'auteur.</p>
-              <a href="https://www.theguardian.com/technology/2025/feb/28/openai-sora-video-generation-uk-amid-copyright-row?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
+              <h3>IA : la France a besoin de terrains d'action. À Lille, nous avons pris de l'avance.</h3>
+              <p> La France doit intensifier ses expérimentations en IA. Découvrez l'exemple de Lille, pionnière dans l'application concrète de l'IA.</p>
+              <a href="https://www.actuia.com/actualite/ia-la-france-a-besoin-de-terrains-daction-a-lille-nous-avons-pris-de-lavance/" target="_blank" rel="noopener noreferrer">
                 Lire l'article original
               </a>
-              <span className={styles.date}>Publié le 28 Février 2025</span>
+              <span className={styles.date}>Publié le 13 Juin 2025</span>
             </article>
           </div>
         </section>
@@ -76,30 +76,30 @@ export default function Veille() {
           
           <div className={styles.articlesList}>
             <article className={styles.articleCard}>
-              <h3>Les ransomwares ont causé 1,1 milliard de dollars de pertes en 2023</h3>
-              <p>Le FBI a rapporté que les attaques par ransomware ont causé des pertes record de 1,1 milliard de dollars en 2023, soulignant la nécessité d'une vigilance accrue face à cette menace croissante.</p>
-              <a href="https://www.chainalysis.com/blog/ransomware-2024/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
+              <h3>Attaque DDoS : une cyber attaque à hauteur de 7,3 Tbps arrêtée !</h3>
+              <p>Une cyberattaque DDoS massive a été déjouée. Découvrez l'ampleur de cette menace et les défis rencontrés pour la stopper.</p>
+              <a href="https://www.zataz.com/attaque-ddos-une-cyber-attaque-a-hauteur-de-73-tbps-arretee/" target="_blank" rel="noopener noreferrer">
                 Lire l'article original
               </a>
-              <span className={styles.date}>Publié le 15 Mars 2024</span>
+              <span className={styles.date}>Publié le 19 Juin 2025</span>
             </article>
 
             <article className={styles.articleCard}>
-              <h3>Le modèle Zero Trust devient incontournable en 2024</h3>
-              <p>Le modèle Zero Trust, qui repose sur le principe de "ne jamais faire confiance, toujours vérifier", est devenu essentiel pour sécuriser les infrastructures face à l'évolution des cybermenaces.</p>
-              <a href="https://novatech.net/blog/the-rise-of-zero-trust-cybersecurity-in-2024-why-its-essential-for-your-business?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
+              <h3>Comment sécuriser le helpdesk face aux attaques d'ingénierie sociale ?</h3>
+              <p>Les services d'assistance sont des cibles clés. Apprenez comment protéger votre helpdesk des manipulations via l'ingénierie sociale.</p>
+              <a href="https://www.it-connect.fr/comment-securiser-le-helpdesk-face-aux-attaques-dingenierie-sociale/" target="_blank" rel="noopener noreferrer">
                 Lire l'article original
               </a>
-              <span className={styles.date}>Publié le 20 Février 2024</span>
+              <span className={styles.date}>Publié le 19 Juin 2025</span>
             </article>
 
             <article className={styles.articleCard}>
-              <h3>Les failles critiques dans les API REST : une préoccupation majeure</h3>
-              <p>OWASP a mis en lumière les vulnérabilités critiques dans les API REST, soulignant l'importance de sécuriser ces interfaces pour prévenir les risques d'exploitation.</p>
-              <a href="https://www.axopen.com/blog/2024/11/owasp-top-10-failles-api/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
+              <h3>Vulnérabilité dans Roundcube CERTFR-2025-ALE-008</h3>
+              <p>Une faille critique a été identifiée dans Roundcube. Le CERT-FR détaille la vulnérabilité et les mesures urgentes à prendre.</p>
+              <a href="https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-008/" target="_blank" rel="noopener noreferrer">
                 Lire l'article original
               </a>
-              <span className={styles.date}>Publié le 11 Novembre 2024</span>
+              <span className={styles.date}>Publié le 05 Juin 2025</span>
             </article>
           </div>
         </section>
